@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar color="warning">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-searchbar></ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-list lines="full">
+  <ion-item *ngFor="let p of photos">
+   <ion-thumbnail slot="start">
+    <img [src]="p.url">
+   </ion-thumbnail>
+    <ion-label text-wrap>
+      <ion-text>
+        <h3 class="title-text">{{p.title}}</h3>
+      </ion-text>
+      <ion-text color="secondary">
+        <h3 class="sub-title-text"> Lorem Ipsum Simply</h3>
+      </ion-text>
+    </ion-label>
+  </ion-item>
+</ion-list>
+</ion-content>
